@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_HomePage">
+
+    <fragment
+        android:id="@+id/nav_HomePage"
+        android:name="com.example.mangmentsystem1.ui.HomePage.HomePageFragmnent"
+        android:label="פריימר ליגה"
+        tools:layout="@layout/home_page_fragmnent_fragment" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mangmentsystem1.ui.home.HomeFragment"
+        android:label="קבוצה חדשה"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.mangmentsystem1.ui.gallery.GalleryFragment"
+        android:label="שחקן חדש"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.mangmentsystem1.ui.slideshow.SlideshowFragment"
+        android:label="גלריה שחקנים"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_TeamsEdit"
+        android:name="com.example.mangmentsystem1.ui.teamsEdit.TeamsEdit"
+        android:label=""
+        tools:layout="@layout/teams_edit_fragment" />
+    <fragment
+
+
+        android:id="@+id/nav_TeamsChange"
+        android:name="com.example.mangmentsystem1.ui.TeamChange.TeamChange"
+        android:label="שינוי פרטי קבוצה"
+        tools:layout="@layout/team_change_fragment" />
+    <fragment
+        android:id="@+id/nav_PlayerIDChange"
+        android:name="com.example.mangmentsystem1.ui.playerID.PlayerIDChange"
+        android:label="שינוי פרטי שחקן"
+        tools:layout="@layout/player_i_d_change_fragment" />
+    <fragment
+        android:id="@+id/nav_addMatch"
+        android:name="com.example.mangmentsystem1.ui.addMatch.addMatch"
+        android:label="משחק חדש"
+        tools:layout="@layout/add_match_fragment" />
+    <fragment
+        android:id="@+id/nav_matchesView"
+        android:name="com.example.mangmentsystem1.ui.matchesView.matchesView"
+        android:label="לוח משחקים"
+        tools:layout="@layout/matches_view_fragment" />
+
+</navigation>

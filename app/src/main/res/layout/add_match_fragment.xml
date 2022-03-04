@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.addMatch.addMatch"
+    android:id="@+id/mylayout5"
+
+    android:scrollbars="vertical"
+    app:contentPadding="0dp"
+    app:cardCornerRadius="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/manage6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_addMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#961F35"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font3"
+                        android:gravity="center"
+                        android:text="Team 1"
+                        android:textColor="#fff"
+                        android:textSize="13sp" />
+
+                    <Spinner
+
+                        android:id="@+id/team1Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_design" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/team1img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/team12"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/team1tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="loading.."
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight=".7"
+                    android:fontFamily="@font/font2"
+                    android:gravity="center"
+                    android:text="VS"
+                    android:textColor="#D5CF49"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Team 2"
+                        android:textColor="#fff"
+                        android:textSize="13sp" />
+
+                    <Spinner
+                        android:id="@+id/team2Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_design" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/team2img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/team5"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/team2tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="loading.."
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/EdtMatchDate"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_design"
+
+                    android:drawableStart="@drawable/custom_time"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Match Date"
+                    android:inputType="date"
+
+                    android:paddingLeft="10dp"
+
+                    android:textSize="12sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/EdtMatchTime"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:background="@drawable/edit_text_design"
+                    android:drawableStart="@drawable/custom_date"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Match Time"
+                    android:inputType="time"
+                    android:paddingLeft="10dp"
+
+                    android:textSize="12sp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <android.widget.Button
+                    android:id="@+id/btn_AddMatch"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btntest"
+                    android:shadowColor="#FF0026"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="0"
+                    android:text="Add match"
+                    android:textColor="@color/white" />
+
+                <android.widget.Button
+                    android:id="@+id/btn_AddMatchExcel"
+                    android:layout_width="140dp"
+                    android:visibility="gone"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btntest"
+                    android:shadowColor="#FF0026"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="0"
+                    android:text="Add file"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></View>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#F4F4F4"
+
+tools:context=".ExcelFileActivity">
+<TextView
+    android:textStyle="bold"
+    android:paddingRight="20dp"
+    android:textColor="#fff"
+    android:fontFamily="@font/font3"
+    android:gravity="right|center"
+    android:layout_alignParentTop="true"
+    android:text="העלאת נתונים לשרת"
+    android:background="#C13C40"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"/>
+<Button
+
+    android:textColor="#111"
+    android:textSize="11dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/button_effect_excel_click"
+    android:fontFamily="@font/font1"
+    android:id="@+id/excel3"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:text="upload excel Sheet for Teams" />
+<RelativeLayout
+
+    android:visibility="gone"
+    android:id="@+id/footer"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/progressbar"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading1"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+    </pl.droidsonroids.gif.GifImageView>
+    <TextView
+        android:textColor="#C1175A"
+        android:fontFamily="@font/font1"
+        android:layout_marginLeft="25dp"
+        android:layout_centerVertical="true"
+        android:text="נא המתן הנתונים נטענים"
+        android:layout_toRightOf="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+</RelativeLayout>

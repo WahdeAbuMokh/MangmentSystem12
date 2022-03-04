@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/background_desgin1"
+    tools:context=".ui.playerID.PlayerIDChange">
+   <ImageView
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:alpha=".55"
+        android:src="@drawable/manage6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ImageView>
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:id="@+id/mylayout4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+
+
+        android:textColor="#111"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/font3"
+        android:textSize="14sp"
+        android:paddingRight="60dp"
+        android:singleLine="true"
+        android:gravity="center|right"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/text_ChangeID"
+        android:text="שינוי פרטי שחקן" />
+
+        <Spinner
+            android:layout_marginTop="80dp"
+            android:paddingLeft="18dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/teamSpinner"
+            android:background="@drawable/spinner_design"
+            android:layout_marginBottom="10dp"/>
+       <Spinner
+           android:visibility="visible"
+           android:paddingLeft="18dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/playerSpinner"
+        android:background="@drawable/spinner_design"
+        android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:textSize="12sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/edit_text_design"
+            android:drawableStart="@drawable/custom_team"
+            android:hint="Player Name"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/EdTChangePlayerName"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:textSize="12sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/edit_text_design"
+            android:drawableStart="@drawable/custom_team"
+            android:hint="Shirt Number"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/EdTChangePlayerNumber"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:textSize="12sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/edit_text_design"
+            android:drawableStart="@drawable/custom_team"
+            android:hint="Age"
+            android:inputType="date"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/EdTChangePlayerAge"
+            />
+    <Spinner
+        android:visibility="visible"
+        android:paddingLeft="18dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/newteamSpinner"
+        android:background="@drawable/spinner_design"
+        android:layout_marginBottom="20dp"/>
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:id="@+id/playerChangeImg"
+        />
+    <LinearLayout
+          android:gravity="center|bottom"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight=".80"
+            android:layout_height="60dp"
+            android:text="Change Image"
+            android:id="@+id/BtnChangePlayerImg"
+            android:background="@drawable/btntest"
+            android:shadowColor="#FF0026"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:textStyle="italic"
+            android:textColor="@color/white"/>
+
+
+
+
+
+    <android.widget.Button
+        android:id="@+id/btn_ChangePlayerID"
+        android:layout_weight=".80"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btntest"
+        android:shadowColor="#FF0026"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

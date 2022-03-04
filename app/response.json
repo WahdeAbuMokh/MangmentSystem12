@@ -1,0 +1,10 @@
+
+{
+  "to": "/topics/notification_userId",
+  "data": {
+    "title": "Notification title",
+    "message": "Notification message",
+    "key1" : "value1",
+    "key2" : "value2"
+  }
+}

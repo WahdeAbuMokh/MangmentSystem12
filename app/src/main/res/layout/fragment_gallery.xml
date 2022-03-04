@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111"
+
+    android:orientation="vertical"
+    tools:context=".ui.gallery.GalleryFragment">
+    <ImageView
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:alpha=".55"
+        android:src="@drawable/manage6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:id="@+id/mylayout2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Add Players Page"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        />
+    <Spinner
+        android:layout_marginTop="130dp"
+        android:id="@+id/spinner1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/spinner_design"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/EdtPlayerName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:textSize="12sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/custom_person"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_design"
+        android:hint="Player Name" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/EdtShirtNumber"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:textSize="12sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/custom_person"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_design"
+        android:hint="Shirt Number" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/EdtPlayerAge"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:textSize="12sp"
+        android:paddingStart="12dp"
+        android:focusable="false"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/custom_date"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_design"
+        android:hint="Birth Of Date" />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/salah2"
+        android:layout_gravity="center"
+        android:id="@+id/imgViewPlayer"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:weightSum="3"
+        android:gravity="center|bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <android.widget.Button
+
+        android:layout_weight=".8"
+        android:id="@+id/btnPlayerImage"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btntest"
+        android:shadowColor="#FF0026"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"
+        android:text="Add Image"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        />
+
+        <android.widget.Button
+            android:layout_weight=".8"
+            android:id="@+id/btnAddPlayer"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:shadowColor="#FF0026"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:shadowRadius="0"
+            android:background="@drawable/btntest"
+            android:textColor="@color/white"
+            android:text="Add Player" />
+        <android.widget.Button
+            android:layout_weight=".8"
+            android:visibility="gone"
+            android:id="@+id/btnAddPlayerExcel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:shadowColor="#FF0026"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:background="@drawable/btntest"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:text="Add file" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

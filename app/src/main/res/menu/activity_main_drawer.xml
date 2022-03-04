@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_HomePage"
+            android:title="main menu" />
+        <item
+            android:id="@+id/nav_home"
+            android:title="Add Team" />
+        <item
+        android:id="@+id/nav_TeamsEdit"
+        android:title="Edit Team" />
+        <item
+        android:id="@+id/nav_TeamsChange"
+        android:title="Change Team ID" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="Add Player" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="Show Players" />
+
+
+        <item
+            android:id="@+id/nav_PlayerIDChange"
+            android:title="Change Player ID" />
+        <item
+            android:id="@+id/nav_addMatch"
+            android:title="Add Match" />
+        <item
+            android:id="@+id/nav_matchesView"
+            android:title="View Matches" />
+
+    </group>
+</menu>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_desgin1"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+
+           <ImageView
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:alpha=".55"
+        android:src="@drawable/manage6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+
+        android:weightSum="5"
+        android:background="@android:color/transparent"
+        android:id="@+id/mylayout3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text_slideshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="Edit Players Page" />
+
+    <Spinner
+        android:layout_marginTop="50dp"
+        android:layout_weight=".35"
+        android:background="@drawable/spinner_design"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+       android:id="@+id/spinner2"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recycler2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <android.widget.Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Show Players"
+            android:id="@+id/btnShowPlayers"
+            android:background="@drawable/btntest"
+
+            android:shadowColor="#FF0026"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+             android:textColor="@color/white"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
